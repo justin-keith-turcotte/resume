@@ -1,0 +1,242 @@
+%------------------------
+% Resume in Latex
+% Author : Justin Turcotte
+% Based off of: https://github.com/jakegut/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\setlength{\footskip}{5pt}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+  \color{Brown}
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Justin Turcotte} \\ \vspace{1pt}
+    \small Fort Saskatchewan, AB \\
+    \small 825-886-7020 $|$ \href{mailto:justin@kturcotte.me}{\underline{justin@kturcotte.me}} $|$ 
+    \href{https://linkedin.com/in/justin-turcotte}{\underline{linkedin.com/in/justin-turcotte}} $|$
+    \href{https://github.com/justin-keith-turcotte}{\underline{github.com/justin-keith-turcotte}}
+\end{center}
+\noindent\rule{\textwidth}{1pt}
+
+%----------Summary----------
+\section{Objective}
+Self-motivated and driven software developer with 4+ years of combined internship
+and professional experience. Graduated with a (B.Eng.) Embedded Systems/Electronic Systems Engineering degree.
+Proficient in Python, Bash, and C programming languages with experience in a Linux environment.
+Always looking to improve my skills through independent research, mentors, and online courses.
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Bash, C/C++, HTML, XML, CSS, PHP, JavaScript} \\
+     \textbf{Developer Tools}{: Git, Docker, VS Code} \\
+     \textbf{Other}{: Linux, Self-driven, Quick-learner, Flexible}
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Conestoga College}{Kitchener, ON}
+      {Bachelor of Electronic Systems Engineering}{Sep. 2017 -- Aug. 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Developer (Remote)}{Nov. 2021 -- Present}
+      {Dejero}{Waterloo, ON}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained automated Python and Bash scripts for provisioning, setup, configuration, and testing of products to bring them to a customer ready state.}
+        \resumeItem{Designed and implemented systems to reliably generate and store product related credentials securely using a TPM and token-based authentication.}
+        \resumeItem{Investigated modems, modem flashing, their quirks and recovery from bad states.}
+        \resumeItem{Designed and implemented modem flashing improvements that reduced the time it took to flash modems from 40+ minutes down to less than 10 minutes.}
+        \resumeItem{Being a direct customer of the Manufacturing team means I am flexible and adaptable to shifting priorities to ensure device provisioning continues to run smoothly without delay.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Product Engineering Intern (In-Office)}{Sep. 2020 -- Dec. 2020}
+      {Sera4}{Waterloo, ON}
+      \resumeItemListStart
+        \resumeItem{Quality control, testing, and configuration of products to a customer ready state.}
+        \resumeItem{Utilized soldering techniques to adjust product configurations as per customer requirements.}
+        \resumeItem{Researched and testing of padlocks in low temperature environments with the goal of improving reliability at various temperatures. Testing included vinyl-covers, vaseline bags, and WD40. Results were documented with photos and observations.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Development Student (In-Office)}{Jan. 2020 -- Apr. 2020}
+      {Blackberry}{Ottawa, ON}
+      \resumeItemListStart
+        \resumeItem{Integrated an external sensor into the QNX Sensor Framework.}
+        \resumeItem{Configured a Nucleo-F767ZI to run FreeRTOS.}
+        \resumeItem{Using a mouse as a test sensor, the Nucleo device read the mouse data which was then sent to the QNX Sensor Framework.}
+        \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+        \resumeItem{Modified the Sensor Framework to support a resource manager (QNX driver), which acted as a TCP client that would connect to and retrieve sensor data from the Nucleo.}
+        \resumeItem{Researched Protobufs and gRPC implementations on the Nucleo device.}
+      \resumeItemListEnd
+
+      \pagebreak
+      \resumeSubheading
+      {Software Development Student - OS Core (In-Office)}{May 2019 -- Aug. 2019}
+      {Blackberry}{Ottawa, ON}
+      \resumeItemListStart
+        \resumeItem{Created recipes and patches in Yocto to contribute to a custom Raspberry Pi 3/3B+ build for endpoint IoT devices.}
+        \resumeItem{Modified Dash and Korn shell source code to secure directories and reject unauthorized input. E.g. Piping scripts into shells and running scripts in an unprotected location.}
+        \resumeItem{Modified bootup services to solve various bugs in the Yocto build.}
+        \resumeItem{Worked with a Nucleo-STM32F767ZI and FreeRTOS.}
+        \resumeItem{Configured MQTT communications between the Nucleo and Raspberry Pi 3B+.}
+        \resumeItem{Implemented an XML parser to parse OTA XML instructions for permissions of IoT end-point devices.}
+        \resumeItem{Assisted Cylance with expanding compatibility of their software to multiple Linux distros and flavors.}
+        \resumeItem{Created a Python script to parse Ubuntu's kernel mapping site and retrieve all kernel versions with their distro and flavor into a text document.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {Capstone Project - Digital Receipts}{Jan. 2021 -- Aug. 2021}
+        {Conestoga College}{Kitchener, ON}
+          \resumeItemListStart
+            \resumeItem{Developed a PoC to replace paper receipts with a digital copy.}
+            \resumeItem{Designed a system that uses NFC to transmit receipts from a Point of Sale (POS) system to a customers mobile device.}
+            \resumeItem{Setup a virtual network PDF printer on a Raspberry Pi, the destination of the POS receipts.}
+            \resumeItem{Implemented a Python script that would manage the receipts sent to the Raspberry Pi and allow physical receipt printing or forward the receipt to an NFC device which would handle transfer to the customers mobile device.}
+          \resumeItemListEnd
+
+          \resumeSubheading
+          {Anti-Nail Biting Project}{May 2021 -- Aug. 2021}
+          {Conestoga College}{Kitchener, ON}
+          \resumeItemListStart
+            \resumeItem{Designed a system that would deter someone from biting their nails.}
+            \resumeItem{A necklace-like device worn around the neck would use an ultrasonic sensor to detect the proximity of a hand to the mouth.}
+            \resumeItem{Triggering the ultrasonic sensor would activate a vibration actuator at the back of the neck signalling to the individual they are biting their nails.}
+            \resumeItem{Implemented software on an Adafruit Feather Express NRF52840 micro-controller that would enable or disable the vibration actuator based on button input.}
+            \resumeItem{Implemented software to read data from an ultrasonic sensor and activate or deactivate the vibration actuator.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------Competitions-----------
+\section{Competitions}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {AI For Good Hackathon}{March 2019}
+        {Geekspeak Commerce}{Toronto, ON}
+          \resumeItemListStart
+            \resumeItem{Utilized machine learning to identify basic facial emotions such as happy, sad, and angry.}
+            \resumeItem{Used Microsoft Azure Custom Vision to create a model for identifying emotions.}
+          \resumeItemListEnd
+
+          \resumeSubheading
+          {Junior Engineers Competition}{Nov. 2018}
+          {Conestoga College}{Kitchener, ON}
+          \resumeItemListStart
+            \resumeItem{Participated in a team of 4. Implemented a device that would move water from a source to a destination with minimal spillage.}
+            \resumeItem{Utilized creativity with limited materials (flat/cylinder cardboard, plastic tubing, string, tape), budget, and time (3 horus).}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
