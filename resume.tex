@@ -18,6 +18,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{moresize}
 \input{glyphtounicode}
 
 
@@ -30,7 +31,7 @@
 
 % serif
 % \usepackage{CormorantGaramond}
-% \usepackage{charter}
+\usepackage{charter}
 
 
 \pagestyle{fancy}
@@ -55,7 +56,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-4pt}\scshape\bfseries\large
   \color{Brown}
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
@@ -65,7 +66,7 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
+  \item[\color{Brown}{\textbullet}]\small{
     {#1 \vspace{-2pt}}
   }
 }
@@ -74,7 +75,7 @@
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textbf{\small#3} & \small #4 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -107,13 +108,14 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Justin Turcotte} \\ \vspace{1pt}
-    \small Fort Saskatchewan, AB \\
-    \small 825-886-7020 $|$ \href{mailto:justin@kturcotte.me}{\underline{justin@kturcotte.me}} $|$ 
+    \textbf{\HUGE \scshape Justin Turcotte} \\ \vspace{1pt}
+    \small Fort Saskatchewan, AB  $|$
+    \small 825-886-7020 \\
+    \href{mailto:justin@kturcotte.me}{\underline{justin@kturcotte.me}} $|$
     \href{https://linkedin.com/in/justin-turcotte}{\underline{linkedin.com/in/justin-turcotte}} $|$
     \href{https://github.com/justin-keith-turcotte}{\underline{github.com/justin-keith-turcotte}}
 \end{center}
-\noindent\rule{\textwidth}{1pt}
+%\noindent\rule{\textwidth}{1pt}
 
 %----------Summary----------
 \section{Objective}
@@ -131,15 +133,6 @@ Always looking to improve my skills through independent research, mentors, and o
      \textbf{Other}{: Linux, Self-driven, Quick-learner, Flexible}
     }}
  \end{itemize}
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Conestoga College}{Kitchener, ON}
-      {Bachelor of Electronic Systems Engineering}{Sep. 2017 -- Aug. 2020}
-  \resumeSubHeadingListEnd
-
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -193,6 +186,16 @@ Always looking to improve my skills through independent research, mentors, and o
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Electronic Systems Engineering}{Sep. 2017 -- Aug. 2020}
+      {Conestoga College}{Kitchener, ON}
+      \resumeItemListStart
+        \resumeItem{Graduated with disctinction (3.8 GPA).}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
